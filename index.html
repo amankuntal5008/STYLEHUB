@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Premium Fashion & Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">StyleHub</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men's</a></li>
+                <li><a href="women.html">Women's</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <form>
+                        <input type="text" class="search-input" placeholder="Search products...">
+                    </form>
+                </div>
+                <a href="cart.html" style="position: relative;">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 5H3m4 8v6a1 1 0 001 1h10a1 1 0 001-1v-6m-8 0V9a2 2 0 012-2h4a2 2 0 012 2v4.01"></path></svg>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+                <a href="auth.html"><svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+             <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Discover Your <span class="gradient-text">Perfect Style</span></h1>
+                    <p>Curated fashion and lifestyle products that define elegance. Experience premium quality with contemporary design.</p>
+                    <div class="hero-buttons">
+                        <a href="#featured" class="btn btn-primary">
+                            Explore Collection
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#categories" class="btn btn-secondary">View Categories</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <a href="product.html?id=1&category=men" class="product-card card-1">
+                            <img src="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Relaxed Suit">
+                            <div class="product-title">Relaxed Suit</div>
+                            <div class="product-price">₹29,999</div>
+                        </a>
+                        <a href="product.html?id=15&category=women" class="product-card card-2">
+                            <img src="https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Trench Coat">
+                            <div class="product-title">Trench Coat</div>
+                            <div class="product-price">₹25,000</div>
+                        </a>
+                        <a href="product.html?id=21&category=accessories" class="product-card card-3">
+                            <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Smart Watch">
+                            <div class="product-title">Smart Watch</div>
+                            <div class="product-price">₹32,999</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+             <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <a href="men.html" class="category-card mens">
+                        <div class="category-content">
+                            <h3 class="category-title">Men's Collection</h3>
+                            <p class="category-desc">Sophisticated styles for the modern gentleman</p>
+                        </div>
+                    </a>
+                    <a href="women.html" class="category-card womens">
+                        <div class="category-content">
+                            <h3 class="category-title">Women's Collection</h3>
+                            <p class="category-desc">Elegant fashion for every occasion</p>
+                        </div>
+                    </a>
+                    <a href="accessories.html" class="category-card accessories">
+                        <div class="category-content">
+                            <h3 class="category-title">Accessories</h3>
+                            <p class="category-desc">Perfect finishing touches for your style</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid">
+                    <div class="featured-card">
+                        <a href="product.html?id=2&category=men"><img src="https://i.pinimg.com/736x/48/08/53/480853de15ab348b6a648266376a1f50.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Leather Jacket"></a>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Leather Jacket</h3>
+                            <div class="featured-price">₹18,500</div>
+                            <button class="btn btn-add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <a href="product.html?id=11&category=women"><img src="https://i.pinimg.com/1200x/ca/13/0b/ca130b1da54eb2895d1d3f9df42df0ee.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Evening Dress"></a>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Evening Dress</h3>
+                            <div class="featured-price">₹27,500</div>
+                            <button class="btn btn-add-to-cart" onclick="addToCart(11)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <a href="product.html?id=3&category=men"><img src="https://i.pinimg.com/736x/4b/be/73/4bbe73e74543070c286e1cef94d3e040.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Casual Shirt"></a>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Casual Shirt</h3>
+                            <div class="featured-price">₹4,200</div>
+                            <button class="btn btn-add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <a href="product.html?id=23&category=accessories"><img src="https://i.pinimg.com/1200x/40/33/ef/4033ef09422e66ec85447d8b4c5bd174.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Statement Necklace"></a>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Statement Necklace</h3>
+                            <div class="featured-price">₹9,500</div>
+                            <button class="btn btn-add-to-cart" onclick="addToCart(23)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <a href="product.html?id=6&category=men"><img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Premium Sneakers"></a>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Premium Sneakers</h3>
+                            <div class="featured-price">₹14,999</div>
+                            <button class="btn btn-add-to-cart" onclick="addToCart(6)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <a href="product.html?id=12&category=women"><img src="https://i.pinimg.com/1200x/aa/4f/ed/aa4fed9acb59d5f8191aa75c1ed6d1f5.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Silk Blouse"></a>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Silk Blouse</h3>
+                            <div class="featured-price">₹7,200</div>
+                             <button class="btn btn-add-to-cart" onclick="addToCart(12)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About StyleHub</h2>
+                <div class="about-content">
+                    <p>StyleHub is more than just a fashion store; we are a destination for curated elegance and sophisticated style. Our journey began in 2025 with a simple vision: to bring premium quality and timeless design to the modern Indian consumer, blending traditional craftsmanship with contemporary aesthetics.</p>
+                    <p>We believe in "conscious luxury" — a philosophy that prioritizes quality, longevity, and ethical production. We partner with renowned designers and artisans who share our commitment to craftsmanship and sustainability. From hand-stitched leather goods to ethically sourced fabrics, every product in our collection tells a story of passion, precision, and purpose.</p>
+                    <p>Our mission is to empower you to express your unique identity through fashion that not only looks good but also feels good and does good. Welcome to the StyleHub family.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-content-wrapper">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <p>Have a question or need assistance? Our team is here to help. Reach out to us via email or visit us at our flagship store in Jaipur.</p>
+                            <p><strong>Name:</strong>Aman Kuntal</p>
+                            <p><strong>Email:</strong> <a href="mailto:amankuntal5008@gmail.com">amankuntal5008@gmail.com</a></p>
+                            <p><strong>Address:</strong> 123 Fashion Lane, Jaipur, Rajasthan, India</p>
+                        </div>
+                        <div class="founder-info">
+                            <img src="https://i.pinimg.com/1200x/b5/f3/af/b5f3afa8050d0fe0f045975cb594246b.jpg?auto=compress&cs=tinysrgb&w=400" alt="Founder Vanshit Agrawal">
+                            <h4>Aman Kuntal</h4>
+                            <p>Founder, StyleHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your destination for premium fashion and lifestyle products.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="men.html">Men's</a></li>
+                        <li><a href="women.html">Women's</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="rent.html">Rent</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Customer Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StyleHub. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
